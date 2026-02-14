@@ -1,7 +1,9 @@
 function mincost(arr)
 { 
 //write your code here
-	if(arr.length <= 1) return 0;
+	if(arr.length <= 1){
+		return {message:0}
+	};
 
 	let totalMinCost = 0
 
@@ -13,10 +15,12 @@ while(arr.length > 1){
 
 	let cost = first + second
 	totalMinCost += cost;
+
+	arr.push(cost)
 }
 // return the min cost
 
-	return totalMinCost;
+	return {message:totalMinCost};
   
 }
 
