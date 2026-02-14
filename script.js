@@ -20,7 +20,7 @@ while(arr.length > 1){
 }
 // return the min cost
 
-	return {message:totalMinCost};
+	return totalMinCost;
   
 }
 
